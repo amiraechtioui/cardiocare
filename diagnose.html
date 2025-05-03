@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diagnosis - CardioCare</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>CardioCare</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="diagnose.html">Diagnosis</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="form-container">
+    <h2>Cardiovascular Risk Assessment</h2>
+    <form id="diagnosis-form" action="result.php" method="POST">
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age" required>
+
+      <label for="blood-pressure">Blood Pressure (mmHg)</label>
+      <input type="number" id="blood-pressure" name="blood-pressure" required>
+
+      <label for="cholesterol">Cholesterol Level (mg/dL)</label>
+      <input type="number" id="cholesterol" name="cholesterol" required>
+
+      <label for="smoking">Do you smoke?</label>
+      <select id="smoking" name="smoking">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+
+      <label for="diabetes">Do you have diabetes?</label>
+      <select id="diabetes" name="diabetes">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 CardioCare | All rights reserved.</p>
+  </footer>
+</body>
+</html>
